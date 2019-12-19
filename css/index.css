@@ -141,6 +141,12 @@ a {
 h1 {
   font-size: 5rem;
 }
+h2 {
+  font-size: 3.25rem;
+}
+h3 {
+  font-size: 2rem;
+}
 html {
   font-size: 62.5%;
 }
@@ -151,24 +157,42 @@ a {
 h1 {
   font-size: 5rem;
 }
-body {
-  margin: 0 auto;
-}
-body .about-dev-section .about-main-dev {
+.about .about-main-dev-section .about-main-dev {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 }
-body .about-dev-section .about-sec-dev {
+.about .about-sec-dev-section .about-sec-dev {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
-body .about-dev-section .about-sec-dev .about-sec-dev-img {
+.about .about-sec-dev-section .about-sec-dev .about-sec-dev-img {
   width: 30%;
   height: 12rem;
 }
-body .about-dev-section .about-sec-dev p {
+.about .about-sec-dev-section .about-sec-dev p {
   padding: 1rem;
 }
-body .about-dev-section .inverted-row {
+.about .about-sec-dev-section .inverted-row {
   flex-direction: row-reverse;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+footer .footer-contact-form {
+  padding: 2rem;
+}
+footer .footer-contact-form div {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-contact-form div input {
+  width: 48%;
+}
+footer .footer-contact-form textarea {
+  width: 100%;
+  height: 12rem;
 }
