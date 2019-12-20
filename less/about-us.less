@@ -1,40 +1,75 @@
-html {
-    font-size: 62.5%;
-}
-
-p, a {
-    font-size: 1.6rem;
-}
-
-h1 {
-    font-size:5rem;
-}
 
 .about {
 
     .about-main-dev-section {
 
         .about-main-dev {
-            display: flex;
-            flex-direction: column;
+            .flex(column);
             padding: @small;
+
+            
+
+            div:first-child {
+                .flex(row; space-around);
+                .about-main-dev-img { 
+                    height: 30rem;
+                    width: 65%;
+                    border-radius: 50%;
+                }
+                .about-dev-icons {
+                    .flex(column; center);
+
+                    img {
+                        .portfolio-icons;
+                        margin: @small/2 0;
+                    }
+                }
+    
+            }
+            .about-dev-content {
+                h3 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .inverted-row {
+            div:first-child {
+                flex-direction: row-reverse;
+            }
         }
     }
 
     .about-sec-dev-section 
     {
         .about-sec-dev {
-            display: flex;
+            .flex();
             align-items: center;
             padding: @small/2;
 
             .about-sec-dev-img {
                 width: 30%;
-                height: 12rem;
+                height: 14rem;
+                border-radius: 50%;
             }
 
             p {
                 padding: 1rem;
+            }
+
+            .about-dev-content {
+
+                .about-dev-icons {
+                    .flex(row);
+                    img {
+                        .portfolio-icons;
+                        margin: 0 @small/2;
+                    }
+                }
+
+                .end-row-icons {
+                    justify-content: flex-end;
+                }
             }
         }
         .inverted-row {
