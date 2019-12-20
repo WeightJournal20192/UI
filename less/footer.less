@@ -1,7 +1,6 @@
 footer {
     .footer-nav {
-        display: flex;
-        flex-direction: column;
+        .flex(column);
         margin: @small;
     }
     
@@ -9,15 +8,14 @@ footer {
         padding: @small;
 
         div {
-            display: flex;
-            justify-content: space-between;
+            .flex(row; space-between);
             input {
                 width: 48%;
             }
         }
 
         textarea {
-            width: 100%;
+            width: 99%;
             height: 12rem;
         }
     }

@@ -1,3 +1,7 @@
+.portfolio-icons {
+  height: 4rem;
+  width: 4rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -143,43 +147,81 @@ a {
 h1,
 h2,
 h3 {
-  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 h2 {
-  font-size: 3.25rem;
+  font-size: 3.5rem;
 }
 h3 {
   font-size: 2rem;
 }
-html {
-  font-size: 62.5%;
-}
-p,
-a {
-  font-size: 1.6rem;
-}
-h1 {
-  font-size: 5rem;
-}
 .about .about-main-dev-section .about-main-dev {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
   padding: 2rem;
+}
+.about .about-main-dev-section .about-main-dev div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.about .about-main-dev-section .about-main-dev div:first-child .about-main-dev-img {
+  height: 30rem;
+  width: 65%;
+  border-radius: 50%;
+}
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 0;
+}
+.about .about-main-dev-section .about-main-dev .about-dev-content h3 {
+  font-size: 3rem;
+}
+.about .about-main-dev-section .inverted-row div:first-child {
+  flex-direction: row-reverse;
 }
 .about .about-sec-dev-section .about-sec-dev {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
   align-items: center;
   padding: 1rem;
 }
 .about .about-sec-dev-section .about-sec-dev .about-sec-dev-img {
   width: 30%;
-  height: 12rem;
+  height: 14rem;
+  border-radius: 50%;
 }
 .about .about-sec-dev-section .about-sec-dev p {
   padding: 1rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .end-row-icons {
+  justify-content: flex-end;
 }
 .about .about-sec-dev-section .inverted-row {
   flex-direction: row-reverse;
@@ -187,6 +229,8 @@ h1 {
 footer .footer-nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
   margin: 2rem;
 }
 footer .footer-contact-form {
@@ -194,12 +238,14 @@ footer .footer-contact-form {
 }
 footer .footer-contact-form div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-content: space-between;
 }
 footer .footer-contact-form div input {
   width: 48%;
 }
 footer .footer-contact-form textarea {
-  width: 100%;
+  width: 99%;
   height: 12rem;
 }
