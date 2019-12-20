@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size:5rem;
+}
+
+.about {
+
+    .about-main-dev-section {
+
+        .about-main-dev {
+            display: flex;
+            flex-direction: column;
+            padding: @small;
+        }
+    }
+
+    .about-sec-dev-section 
+    {
+        .about-sec-dev {
+            display: flex;
+            align-items: center;
+            padding: @small/2;
+
+            .about-sec-dev-img {
+                width: 30%;
+                height: 12rem;
+            }
+
+            p {
+                padding: 1rem;
+            }
+        }
+        .inverted-row {
+            flex-direction: row-reverse;
+        }
+    }
+}
