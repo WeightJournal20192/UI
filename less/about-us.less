@@ -3,6 +3,10 @@
 
     .about-main-dev-section {
 
+        background: @primary-background;
+        background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(45,44,44,1) 100%);
+        border-bottom: @primary-color .5rem solid;
+
         .about-main-dev {
             .flex(column);
             padding: @small;
@@ -18,11 +22,8 @@
                 }
                 .about-dev-icons {
                     .flex(column; center);
-
-                    img {
-                        .portfolio-icons;
-                        margin: @small/2 0;
-                    }
+                    align-items: center;
+                    .portfolio-icons(0; @small/2)
                 }
     
             }
@@ -40,8 +41,12 @@
         }
     }
 
-    .about-sec-dev-section 
-    {
+    .about-sec-dev-section {
+
+        // background: @secondary-background;
+        background: @secondary-background;
+        background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(85,85,85,1) 100%);
+        color: white;
         .about-sec-dev {
             .flex();
             align-items: center;
@@ -61,19 +66,73 @@
 
                 .about-dev-icons {
                     .flex(row);
-                    img {
-                        .portfolio-icons;
-                        margin: 0 @small/2;
-                    }
+                    .portfolio-icons(@small/2; 0);
+                    align-items: center;
+                    background: @font-color;
+                    width: 20rem;
+                    border-top-right-radius: 15rem;
+                    
                 }
 
                 .end-row-icons {
                     justify-content: flex-end;
+                    align-items: center;
+                    border-top-left-radius: 15rem;
+                    border-top-right-radius: 0;
+                    
                 }
             }
         }
         .inverted-row {
             flex-direction: row-reverse;
+            
+        }
+    }
+
+    .about-built-banner {
+        background: @primary-color;
+        background: radial-gradient(circle, rgba(255,195,0,1) 0%, rgba(208,159,1,1) 100%);
+        color: black;
+        h2 {
+            text-align: center;
+            padding: @small 0;
+        }
+
+        div {
+            .flex(row; space-evenly);
+            align-items: center;
+            flex-wrap: wrap;
+            img {
+                filter: grayscale(100%);
+            }
+
+            img:hover {
+                filter: grayscale(0%);
+            }
+            img:first-child {
+                height: 5rem;
+                width: 10rem;
+            }
+            img:nth-child(2) {
+                height:10rem;
+                width: 10rem;
+            }
+            img:nth-child(3) {
+                height: 8rem;
+                width: 10rem;
+            }
+            img:nth-child(4) {
+                height: 7rem;
+                width: 10rem;
+            }
+            img:nth-child(5) {
+                height: 5rem;
+                width: 10rem;
+            }
+            img:last-child {
+                height: 10rem;
+                width: 10rem;
+            }
         }
     }
 }

@@ -1,6 +1,13 @@
-.portfolio-icons {
-  height: 4rem;
-  width: 4rem;
+.input-styling {
+  background: #b0b0ac;
+  border-color: #b0b0ac;
+  border-radius: 0.5rem;
+}
+.background-styling {
+  background-image: url(../css/images/bg02.png), url(../css/images/bg02.png), url(../css/images/bg01.png);
+  background-position: top left, top left, top left;
+  background-size: 100% 6em, 100% 6em, auto;
+  background-repeat: no-repeat, no-repeat, repeat;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -132,6 +139,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  color: #e0e0e0;
 }
 body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -158,6 +166,11 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+.about .about-main-dev-section {
+  background: #4a4a4a;
+  background: radial-gradient(circle, #4a4a4a 0%, #2d2c2c 100%);
+  border-bottom: #FFC300 0.5rem solid;
+}
 .about .about-main-dev-section .about-main-dev {
   display: flex;
   flex-direction: column;
@@ -181,10 +194,16 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
-.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img {
-  height: 4rem;
-  width: 4rem;
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img:first-child {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img + img {
+  height: 4.2rem;
+  width: 4.2rem;
   margin: 1rem 0;
 }
 .about .about-main-dev-section .about-main-dev .about-dev-content h3 {
@@ -192,6 +211,11 @@ h3 {
 }
 .about .about-main-dev-section .inverted-row div:first-child {
   flex-direction: row-reverse;
+}
+.about .about-sec-dev-section {
+  background: #808080;
+  background: radial-gradient(circle, #808080 0%, #555555 100%);
+  color: white;
 }
 .about .about-sec-dev-section .about-sec-dev {
   display: flex;
@@ -214,17 +238,81 @@ h3 {
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
+  align-items: center;
+  background: #e0e0e0;
+  width: 20rem;
+  border-top-right-radius: 15rem;
 }
-.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img {
-  height: 4rem;
-  width: 4rem;
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img:first-child {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 1rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img + img {
+  height: 4.2rem;
+  width: 4.2rem;
   margin: 0 1rem;
 }
 .about .about-sec-dev-section .about-sec-dev .about-dev-content .end-row-icons {
   justify-content: flex-end;
+  align-items: center;
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 0;
 }
 .about .about-sec-dev-section .inverted-row {
   flex-direction: row-reverse;
+}
+.about .about-built-banner {
+  background: #FFC300;
+  background: radial-gradient(circle, #ffc300 0%, #d09f01 100%);
+  color: black;
+}
+.about .about-built-banner h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+.about .about-built-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .about-built-banner div img {
+  filter: grayscale(100%);
+}
+.about .about-built-banner div img:hover {
+  filter: grayscale(0%);
+}
+.about .about-built-banner div img:first-child {
+  height: 5rem;
+  width: 10rem;
+}
+.about .about-built-banner div img:nth-child(2) {
+  height: 10rem;
+  width: 10rem;
+}
+.about .about-built-banner div img:nth-child(3) {
+  height: 8rem;
+  width: 10rem;
+}
+.about .about-built-banner div img:nth-child(4) {
+  height: 7rem;
+  width: 10rem;
+}
+.about .about-built-banner div img:nth-child(5) {
+  height: 5rem;
+  width: 10rem;
+}
+.about .about-built-banner div img:last-child {
+  height: 10rem;
+  width: 10rem;
+}
+footer {
+  background: #4a4a4a;
+  color: white;
+  background: radial-gradient(circle, #4a4a4a 0%, #2d2c2c 100%);
 }
 footer .footer-nav {
   display: flex;
@@ -233,10 +321,16 @@ footer .footer-nav {
   align-content: flex-start;
   margin: 2rem;
 }
+footer .footer-nav a {
+  color: #ececec;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
 footer .footer-contact-form {
   padding: 2rem;
 }
 footer .footer-contact-form div {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -244,8 +338,39 @@ footer .footer-contact-form div {
 }
 footer .footer-contact-form div input {
   width: 48%;
+  background: #b0b0ac;
+  border-color: #b0b0ac;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 footer .footer-contact-form textarea {
+  background: #b0b0ac;
+  border-color: #b0b0ac;
+  border-radius: 0.5rem;
   width: 99%;
   height: 12rem;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+footer .footer-contact-form .footer-form-button {
+  background: black;
+  background: radial-gradient(circle, #000000 0%, #121212 100%);
+  padding: 1rem 4rem;
+  color: #e0e0e0;
+  border-color: #333;
+  border-radius: 1rem;
+  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  font-size: 1.6rem;
+}
+footer .footer-contact-form .footer-form-button:active {
+  background: #FFC300;
+  color: black;
+}
+footer p {
+  text-align: center;
+  padding: 2rem;
+}
+footer > h3 {
+  padding: 2rem 0 0 2rem;
 }
