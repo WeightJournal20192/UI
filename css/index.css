@@ -229,9 +229,32 @@ h3 {
   width: 30%;
   height: 14rem;
   border-radius: 50%;
+  border: 0.3rem solid #333;
 }
 .about .about-sec-dev-section .about-sec-dev p {
   padding: 1rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text h3 {
+  background: #e0e0e0;
+  color: black;
+  width: 15rem;
+  padding: 1rem;
+  border-bottom: #FFC300 0.3rem solid;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text p {
+  background: #333;
+  width: 90%;
+  border-radius: 2rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .flex-start {
+  align-items: flex-start;
 }
 .about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons {
   display: flex;
@@ -259,6 +282,13 @@ h3 {
   border-top-left-radius: 15rem;
   border-top-right-radius: 0;
 }
+.about .about-sec-dev-section .about-sec-dev .about-dev-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
 .about .about-sec-dev-section .inverted-row {
   flex-direction: row-reverse;
 }
@@ -281,6 +311,7 @@ h3 {
 }
 .about .about-built-banner div img {
   filter: grayscale(100%);
+  padding: 0 2rem;
 }
 .about .about-built-banner div img:hover {
   filter: grayscale(0%);
