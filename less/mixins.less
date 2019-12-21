@@ -5,11 +5,29 @@
     align-content: @content;
 }
 
-.button {
+.portfolio-icons(@x: 0;@y: 0) {
+    img:first-child {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: @y @x;
+    }
 
+    img + img {
+        height: 4.2rem;
+        width: 4.2rem;
+        margin: @y @x;
+    }
 }
 
-.portfolio-icons {
-    height: 4rem;
-    width: 4rem;
+.input-styling {
+    background: #b0b0ac;
+    border-color: #b0b0ac;
+    border-radius: .5rem;
+}
+
+.background-styling {
+    background-image: url(../css/images/bg02.png), url(../css/images/bg02.png), url(../css/images/bg01.png);
+    background-position: top left, top left, top left;
+    background-size: 100% 6em, 100% 6em, auto;
+    background-repeat: no-repeat, no-repeat, repeat;
 }

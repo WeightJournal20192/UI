@@ -1,23 +1,65 @@
 footer {
+
+    background: @primary-background;
+    color: white;
+    background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(45,44,44,1) 100%);
+
     .footer-nav {
         .flex(column);
         margin: @small;
+        a {
+            color: #ececec;
+            text-decoration: underline;
+            margin: @small/2 0;
+        }
     }
     
     .footer-contact-form {
         padding: @small;
 
         div {
+            margin-top: @small/2;
             .flex(row; space-between);
             input {
                 width: 48%;
+                .input-styling;
+                margin-bottom: @small/2;
+                padding: @small/2;
             }
         }
 
         textarea {
+            .input-styling;
             width: 99%;
             height: 12rem;
+            font-family: @text-font;
+            margin-bottom:@small/2;
         }
+
+        .footer-form-button {
+            background: black;
+            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 100%);
+            padding: @small/2 @medium;
+            color: @font-color;
+            border-color: @secondary-color;
+            border-radius: 1rem;
+            font-family: @h-font;
+            font-size: 1.6rem;
+
+            &:active {
+                background: @primary-color;
+                color: black;
+            }
+        }
+
+    }
+
+    p {
+        text-align: center;
+        padding: @small;
     }
 }
 
+footer > h3 {
+    padding: @small 0 0 @small;
+}
