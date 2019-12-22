@@ -166,6 +166,12 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
 .about .about-main-dev-section {
   background: #4a4a4a;
   background: radial-gradient(circle, #4a4a4a 0%, #2d2c2c 100%);
@@ -178,6 +184,15 @@ h3 {
   align-content: flex-start;
   padding: 2rem;
 }
+@media (min-width: 650px) {
+  .about .about-main-dev-section .about-main-dev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+  }
+}
 .about .about-main-dev-section .about-main-dev div:first-child {
   display: flex;
   flex-direction: row;
@@ -187,10 +202,16 @@ h3 {
 }
 .about .about-main-dev-section .about-main-dev div:first-child .about-main-dev-img {
   height: 30rem;
-  width: 65%;
+  width: 30rem;
   border-radius: 50%;
   border: 1rem solid #e0e0e0;
   z-index: 1;
+}
+@media (min-width: 650px) {
+  .about .about-main-dev-section .about-main-dev div:first-child .about-main-dev-img {
+    height: 25rem;
+    width: 25rem;
+  }
 }
 .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons {
   background: #e0e0e0;
@@ -218,11 +239,26 @@ h3 {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
+@media (min-width: 650px) {
+  .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons-right {
+    left: 26rem;
+  }
+}
 .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons-left {
   position: absolute;
   right: 32rem;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
+}
+@media (min-width: 650px) {
+  .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons-left {
+    right: 26rem;
+  }
+}
+@media (min-width: 650px) {
+  .about .about-main-dev-section .about-main-dev .about-dev-content {
+    width: 45%;
+  }
 }
 .about .about-main-dev-section .about-main-dev .about-dev-content h3 {
   font-size: 3rem;
@@ -246,6 +282,11 @@ h3 {
   align-content: flex-start;
   align-items: flex-end;
 }
+@media (min-width: 650px) {
+  .about .about-main-dev-section .inverted-row {
+    flex-direction: row-reverse;
+  }
+}
 .about .about-main-dev-section .inverted-row div:first-child {
   flex-direction: row-reverse;
 }
@@ -263,7 +304,7 @@ h3 {
   padding: 1rem;
 }
 .about .about-sec-dev-section .about-sec-dev .about-sec-dev-img {
-  width: 30%;
+  width: 14rem;
   height: 14rem;
   border-radius: 50%;
   border: 0.3rem solid #333;

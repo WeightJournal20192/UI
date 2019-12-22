@@ -6,20 +6,32 @@
         background: @primary-background;
         background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(45,44,44,1) 100%);
         border-bottom: @primary-color .5rem solid;
+        
 
         .about-main-dev {
             .flex(column);
             padding: @small;
 
+            @media @tablet {
+                .flex(row;space-between);
+                align-items: center;
+
+            }
+
             div:first-child {
                 .flex(row);
                 align-items: center;
+  
                 .about-main-dev-img { 
                     height: 30rem;
-                    width: 65%;
+                    width: 30rem;
                     border-radius: 50%;
                     border: 1rem solid @font-color;
                     z-index:1;
+                    @media @tablet {
+                        height: 25rem;
+                        width: 25rem;
+                    }
                 }
                 .about-dev-icons {
                     background: @font-color;
@@ -28,7 +40,6 @@
                     .portfolio-icons(0; @small/2);
                     height: 15rem;
                     width: 9rem;
-
                 }
 
                 .about-dev-icons-right {
@@ -36,6 +47,9 @@
                     left: 32rem;
                     border-top-right-radius: 2rem;
                     border-bottom-right-radius: 2rem;
+                    @media @tablet {
+                        left: 26rem;
+                    }
                 }
 
                 .about-dev-icons-left {
@@ -43,10 +57,16 @@
                     right: 32rem;
                     border-top-left-radius: 2rem;
                     border-bottom-left-radius: 2rem;
+                    @media @tablet {
+                        right: 26rem;
+                    }
                 }
     
             }
             .about-dev-content {
+                @media @tablet {
+                    width: 45%;
+                }
                 h3 {
                     font-size: 3rem;
                     background: black;
@@ -72,6 +92,9 @@
         }
 
         .inverted-row {
+            @media @tablet {
+                flex-direction: row-reverse;
+            }
             div:first-child {
                 flex-direction: row-reverse;
             }
@@ -90,7 +113,7 @@
             padding: @small/2;
 
             .about-sec-dev-img {
-                width: 30%;
+                width: 14rem;
                 height: 14rem;
                 border-radius: 50%;
                 border: .3rem solid @secondary-color;
