@@ -181,20 +181,26 @@ h3 {
 .about .about-main-dev-section .about-main-dev div:first-child {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
 }
 .about .about-main-dev-section .about-main-dev div:first-child .about-main-dev-img {
   height: 30rem;
   width: 65%;
   border-radius: 50%;
+  border: 1rem solid #e0e0e0;
+  z-index: 1;
 }
 .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons {
+  background: #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  height: 15rem;
+  width: 9rem;
 }
 .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img:first-child {
   height: 3.5rem;
@@ -206,8 +212,39 @@ h3 {
   width: 4.2rem;
   margin: 1rem 0;
 }
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons-right {
+  position: absolute;
+  left: 32rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons-left {
+  position: absolute;
+  right: 32rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
 .about .about-main-dev-section .about-main-dev .about-dev-content h3 {
   font-size: 3rem;
+  background: black;
+  color: #e0e0e0;
+  width: 12rem;
+  padding: 1rem;
+  border-bottom: #FFC300 0.3rem solid;
+}
+.about .about-main-dev-section .about-main-dev .about-dev-content p {
+  background: #e0e0e0;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #333;
+  box-shadow: 3px 3px 2px black;
+}
+.about .about-main-dev-section .about-main-dev .right-h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
 }
 .about .about-main-dev-section .inverted-row div:first-child {
   flex-direction: row-reverse;
@@ -229,9 +266,33 @@ h3 {
   width: 30%;
   height: 14rem;
   border-radius: 50%;
+  border: 0.3rem solid #333;
 }
 .about .about-sec-dev-section .about-sec-dev p {
   padding: 1rem;
+  box-shadow: 3px 3px 2px black;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text h3 {
+  background: #e0e0e0;
+  color: black;
+  width: 15rem;
+  padding: 1rem;
+  border-bottom: #FFC300 0.3rem solid;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-content-text p {
+  background: #333;
+  width: 90%;
+  border-radius: 2rem;
+}
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .flex-start {
+  align-items: flex-start;
 }
 .about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons {
   display: flex;
@@ -259,6 +320,13 @@ h3 {
   border-top-left-radius: 15rem;
   border-top-right-radius: 0;
 }
+.about .about-sec-dev-section .about-sec-dev .about-dev-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
 .about .about-sec-dev-section .inverted-row {
   flex-direction: row-reverse;
 }
@@ -281,6 +349,7 @@ h3 {
 }
 .about .about-built-banner div img {
   filter: grayscale(100%);
+  padding: 0 2rem;
 }
 .about .about-built-banner div img:hover {
   filter: grayscale(0%);
