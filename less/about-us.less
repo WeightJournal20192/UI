@@ -12,24 +12,63 @@
             padding: @small;
 
             div:first-child {
-                .flex(row; space-around);
+                .flex(row);
+                align-items: center;
                 .about-main-dev-img { 
                     height: 30rem;
                     width: 65%;
                     border-radius: 50%;
+                    border: 1rem solid @font-color;
+                    z-index:1;
                 }
                 .about-dev-icons {
+                    background: @font-color;
                     .flex(column; center);
                     align-items: center;
-                    .portfolio-icons(0; @small/2)
+                    .portfolio-icons(0; @small/2);
+                    height: 15rem;
+                    width: 9rem;
+
+                }
+
+                .about-dev-icons-right {
+                    position: absolute;
+                    left: 32rem;
+                    border-top-right-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                }
+
+                .about-dev-icons-left {
+                    position: absolute;
+                    right: 32rem;
+                    border-top-left-radius: 2rem;
+                    border-bottom-left-radius: 2rem;
                 }
     
             }
             .about-dev-content {
                 h3 {
                     font-size: 3rem;
+                    background: black;
+                    color: @font-color;
+                    width: 12rem;
+                    padding: @small/2;
+                    border-bottom: @primary-color 0.3rem solid;
+                }
+
+                p {
+                    background: @font-color;
+                    padding: @small/2;
+                    border-radius: 1rem;
+                    color: @secondary-color;
+                    box-shadow: 3px 3px 2px black;
                 }
             }
+            .right-h3 {
+                .flex(column);
+                align-items: flex-end;
+            }
+
         }
 
         .inverted-row {
@@ -59,6 +98,7 @@
 
             p {
                 padding: 1rem;
+                box-shadow: 3px 3px 2px black;
             }
 
             .about-dev-content {
@@ -93,6 +133,7 @@
                     background: @font-color;
                     width: 20rem;
                     border-top-right-radius: 15rem;
+                    
                     
                 }
 
