@@ -175,6 +175,7 @@ h3 {
 #header {
   padding: 2em;
   background: #808080;
+  width: auto;
 }
 #header h1 {
   color: #FFC300;
@@ -215,6 +216,7 @@ h3 {
   height: 35em;
   text-align: center;
   position: relative;
+  width: auto;
 }
 #banner header {
   position: absolute;
@@ -604,17 +606,29 @@ h3 {
   height: 9.5rem;
   width: 9rem;
 }
-.row {
+.index-container {
+  margin: 0 auto;
+  width: auto;
+}
+.index-container .row {
   color: #333;
   width: 100%;
   display: flex;
   flex-direction: row;
   border-spacing: 4rem;
-  padding: 1em;
+  background: #808080;
 }
-.row .cell {
+.index-container .row .cell {
   width: 33%;
   padding: 1em;
+}
+.index-container .row .cell img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding: 1em;
+  border-radius: 10px;
 }
 footer {
   background: #4a4a4a;
