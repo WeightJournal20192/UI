@@ -3,27 +3,92 @@
 .index-container {
     margin: 0 auto;
     width: auto;
-.row {
-  color: @secondary-color;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  border-spacing: @medium;
-  //padding: .5em;
-  background: @secondary-background;
-  .cell {
-    width: 33%;
-    padding: 1em;
-    img {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-        padding: 1em;
-        border-radius: 10px;  
-    }
-    
-  }
+    border-bottom: #FFC300 0.5rem solid;
+    border-top: #FFC300 0.5rem solid;
+
+    .row {
+        color: @secondary-color;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-spacing: @medium;
+        //padding: .5em;
+        background: @secondary-background;
+            .cell {
+                width: 33%;
+                padding: 1em;
+                text-align: center;
+                img {
+                    display:block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 25%;
+                    height: 6em;
+                    padding: 1em;
+                    border-radius: 10px;  
+                }
+            }
+        }
 }
+
+.big-container {
+    width:auto;
+    height: 10em;
+    padding: 3em 4em 3em 4em;
+    text-align: center;
+    background-color: #fff;
+    h2 {
+        font-size: 3em;
+        color: @font-color;
+    }
+}
+
+.bottom-index-section {
+  background: @secondary-background; 
+
+  .bottom-index-container {
+      @media @desktop {
+          .flex(row;space-around);
+          flex-wrap: wrap;
+      }
+  }
+
+.bottom-index {
+    .flex;
+    align-items: center;
+    padding: @small/2;
+    @media @desktop {
+        flex-direction: columnn;
+        width:30%;
+    }
+
+    .bottom-index-img {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    p {
+        padding: 1em;
+        box-shadow: 3px 3px 2px black;
+    }
+
+    .bottom-index-content {
+        @media @desktop {
+            .flex(column);
+            align-items: center;
+        }
+        .bottom-index-content-text {
+            .flex(column);
+            align-items:center;
+            @media @desktop {
+                align-items: center;
+            }
+            
+        }
+
+    }
+
+}
+
 }
 

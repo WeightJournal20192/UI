@@ -176,6 +176,7 @@ h3 {
   padding: 2em;
   background: #808080;
   width: auto;
+  border-bottom: #FFC300 0.5rem solid;
 }
 #header h1 {
   color: #FFC300;
@@ -184,7 +185,7 @@ h3 {
   text-align: center;
 }
 #header nav {
-  width: 100%;
+  width: auto;
   height: 6em;
   display: flex;
   flex-flow: column;
@@ -203,11 +204,6 @@ h3 {
 }
 #header nav ul li a:hover {
   color: #a19e9e;
-}
-#header hr {
-  height: 1em;
-  width: 100%;
-  background: #FFC300;
 }
 #banner {
   background-image: url('../images/barbell.jpg');
@@ -609,6 +605,8 @@ h3 {
 .index-container {
   margin: 0 auto;
   width: auto;
+  border-bottom: #FFC300 0.5rem solid;
+  border-top: #FFC300 0.5rem solid;
 }
 .index-container .row {
   color: #333;
@@ -621,14 +619,131 @@ h3 {
 .index-container .row .cell {
   width: 33%;
   padding: 1em;
+  text-align: center;
 }
 .index-container .row .cell img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+  height: 6em;
   padding: 1em;
   border-radius: 10px;
+}
+.big-container {
+  width: auto;
+  height: 10em;
+  padding: 3em 4em 3em 4em;
+  text-align: center;
+  background-color: #fff;
+}
+.big-container h2 {
+  font-size: 3em;
+  color: #e0e0e0;
+}
+.bottom-index-section {
+  background: #808080;
+}
+@media (min-width: 800px) {
+  .bottom-index-section .bottom-index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.bottom-index-section .bottom-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+  .bottom-index-section .bottom-index {
+    flex-direction: columnn;
+    width: 30%;
+  }
+}
+.bottom-index-section .bottom-index .bottom-index-img {
+  width: 14rem;
+  height: 14rem;
+}
+.bottom-index-section .bottom-index p {
+  padding: 1em;
+  box-shadow: 3px 3px 2px black;
+}
+@media (min-width: 800px) {
+  .bottom-index-section .bottom-index .bottom-index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+  }
+}
+.bottom-index-section .bottom-index .bottom-index-content .bottom-index-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .bottom-index-section .bottom-index .bottom-index-content .bottom-index-content-text {
+    align-items: center;
+  }
+}
+.index-built-banner {
+  background: #FFC300;
+  background: radial-gradient(circle, #ffc300 0%, #d09f01 100%);
+  color: black;
+  padding: 2rem 0;
+}
+.index-built-banner h2 {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+.index-built-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index-built-banner div img {
+  filter: grayscale(100%);
+  padding: 0 2rem;
+}
+.index-built-banner div img:hover {
+  filter: grayscale(0%);
+}
+.index-built-banner div img:first-child {
+  height: 3.5rem;
+  width: 9rem;
+}
+.index-built-banner div img:nth-child(2) {
+  height: 9.5rem;
+  width: 9rem;
+}
+.index-built-banner div img:nth-child(3) {
+  height: 7.5rem;
+  width: 9rem;
+}
+.index-built-banner div img:nth-child(4) {
+  height: 6.5rem;
+  width: 9rem;
+}
+.index-built-banner div img:nth-child(5) {
+  height: 4.5rem;
+  width: 9rem;
+}
+.index-built-banner div img:last-child {
+  height: 9.5rem;
+  width: 9rem;
 }
 footer {
   background: #4a4a4a;
@@ -723,53 +838,4 @@ footer .footer-contact-form .footer-form-button:active {
 footer p {
   text-align: center;
   padding: 2rem;
-}
-.about-built-banner {
-  background: #FFC300;
-  background: radial-gradient(circle, #ffc300 0%, #d09f01 100%);
-  color: black;
-  padding: 2rem 0;
-}
-.about-built-banner h2 {
-  text-align: center;
-  padding: 1rem 0 2rem 0;
-}
-.about-built-banner div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.about-built-banner div img {
-  filter: grayscale(100%);
-  padding: 0 2rem;
-}
-.about-built-banner div img:hover {
-  filter: grayscale(0%);
-}
-.about-built-banner div img:first-child {
-  height: 3.5rem;
-  width: 9rem;
-}
-.about-built-banner div img:nth-child(2) {
-  height: 9.5rem;
-  width: 9rem;
-}
-.about-built-banner div img:nth-child(3) {
-  height: 7.5rem;
-  width: 9rem;
-}
-.about-built-banner div img:nth-child(4) {
-  height: 6.5rem;
-  width: 9rem;
-}
-.about-built-banner div img:nth-child(5) {
-  height: 4.5rem;
-  width: 9rem;
-}
-.about-built-banner div img:last-child {
-  height: 9.5rem;
-  width: 9rem;
 }
