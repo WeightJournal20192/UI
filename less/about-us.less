@@ -6,20 +6,36 @@
         background: @primary-background;
         background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(45,44,44,1) 100%);
         border-bottom: @primary-color .5rem solid;
+        padding: @small 0;
+        
 
         .about-main-dev {
             .flex(column);
             padding: @small;
 
+            @media @tablet {
+                .flex(row;space-between);
+                align-items: center;
+
+            }
+
             div:first-child {
                 .flex(row);
                 align-items: center;
+                @media @desktop {
+                    .flex(column);
+                }
+  
                 .about-main-dev-img { 
                     height: 30rem;
-                    width: 65%;
+                    width: 30rem;
                     border-radius: 50%;
                     border: 1rem solid @font-color;
                     z-index:1;
+                    @media @tablet {
+                        height: 25rem;
+                        width: 25rem;
+                    }
                 }
                 .about-dev-icons {
                     background: @font-color;
@@ -28,7 +44,14 @@
                     .portfolio-icons(0; @small/2);
                     height: 15rem;
                     width: 9rem;
+                    @media @desktop {
+                        flex-direction: row;
+                        width: 12rem;
+                        height: 5rem;
+                        margin-top: 1rem;
+                        justify-content: space-around;
 
+                    }
                 }
 
                 .about-dev-icons-right {
@@ -36,6 +59,14 @@
                     left: 32rem;
                     border-top-right-radius: 2rem;
                     border-bottom-right-radius: 2rem;
+                    @media @tablet {
+                        left: 26rem;
+
+                        @media @desktop {
+                            position: static;
+                            border-radius: 1rem;
+                        }
+                    }
                 }
 
                 .about-dev-icons-left {
@@ -43,10 +74,23 @@
                     right: 32rem;
                     border-top-left-radius: 2rem;
                     border-bottom-left-radius: 2rem;
+                    @media @tablet {
+                        right: 26rem;
+                        @media @desktop {
+                            position: static;
+                            border-radius: 1rem;
+                        }
+                    }
                 }
     
             }
             .about-dev-content {
+                @media @tablet {
+                    width: 45%;
+                    @media @desktop {
+                        width: 60%;
+                    }
+                }
                 h3 {
                     font-size: 3rem;
                     background: black;
@@ -72,8 +116,14 @@
         }
 
         .inverted-row {
+            @media @tablet {
+                flex-direction: row-reverse;
+            }
             div:first-child {
                 flex-direction: row-reverse;
+                @media @desktop {
+                    flex-direction: column;
+                }
             }
         }
     }
@@ -84,13 +134,27 @@
         background: @secondary-background;
         background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(85,85,85,1) 100%);
         color: white;
+        padding: @small 0;
+
+        .container {
+            @media @desktop {
+                .flex(row;space-around);
+                flex-wrap: wrap;
+            }
+
+
+        }
         .about-sec-dev {
             .flex;
             align-items: center;
             padding: @small/2;
+            @media @desktop {
+                flex-direction: column;
+                width: 30%;
+            }
 
             .about-sec-dev-img {
-                width: 30%;
+                width: 14rem;
                 height: 14rem;
                 border-radius: 50%;
                 border: .3rem solid @secondary-color;
@@ -102,9 +166,16 @@
             }
 
             .about-dev-content {
+                @media @desktop {
+                    .flex(column);
+                    align-items: center;
+                }
                 .about-dev-content-text {
                     .flex(column);
                     align-items: flex-end;
+                    @media @desktop {
+                        align-items: center;
+                    }
                     h3 {
                         background: @font-color;
                         color: black;
@@ -122,6 +193,9 @@
 
                 .flex-start {
                     align-items:flex-start;
+                    @media @desktop {
+                        align-items: center;
+                    }
                 }
 
  
@@ -133,27 +207,36 @@
                     background: @font-color;
                     width: 20rem;
                     border-top-right-radius: 15rem;
-                    
+                    @media @desktop {
+                        border-radius: 2rem;
+                        justify-content: center;
+                    }
                     
                 }
 
                 .end-row-icons {
                     justify-content: flex-end;
-                    align-items: center;
                     border-top-left-radius: 15rem;
                     border-top-right-radius: 0;
-                    
+                    @media @desktop {
+                        border-radius: 2rem;
+                        justify-content: center;
+                    }
                 }
             }
             
 
-        .about-dev-content > div{
-            .flex(row);
-            justify-content: flex-end;
-        }
+            .about-dev-content > div{
+                .flex(row);
+                justify-content: flex-end;
+            }
+        
         }
         .inverted-row {
             flex-direction: row-reverse;
+            @media @desktop {
+                flex-direction: column;
+            }
             
         }
     }
@@ -162,9 +245,10 @@
         background: @primary-color;
         background: radial-gradient(circle, rgba(255,195,0,1) 0%, rgba(208,159,1,1) 100%);
         color: black;
+        padding: @small 0;
         h2 {
             text-align: center;
-            padding: @small 0;
+            padding: @small/2 0 @small 0;
         }
 
         div {
@@ -180,28 +264,28 @@
                 filter: grayscale(0%);
             }
             img:first-child {
-                height: 5rem;
-                width: 10rem;
+                height: 3.5rem;
+                width: 9rem;
             }
             img:nth-child(2) {
-                height:10rem;
-                width: 10rem;
+                height:9.5rem;
+                width: 9rem;
             }
             img:nth-child(3) {
-                height: 8rem;
-                width: 10rem;
+                height: 7.5rem;
+                width: 9rem;
             }
             img:nth-child(4) {
-                height: 7rem;
-                width: 10rem;
+                height: 6.5rem;
+                width: 9rem;
             }
             img:nth-child(5) {
-                height: 5rem;
-                width: 10rem;
+                height: 4.5rem;
+                width: 9rem;
             }
             img:last-child {
-                height: 10rem;
-                width: 10rem;
+                height: 9.5rem;
+                width: 9rem;
             }
         }
     }
