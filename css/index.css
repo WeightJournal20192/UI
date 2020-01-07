@@ -166,16 +166,15 @@ h2 {
 h3 {
   font-size: 2rem;
 }
-
 @media (min-width: 800px) {
   .container {
     margin: 0 auto;
     width: 800px;
   }
 }
-
 #header {
   padding: 2em;
+  background: #808080;
 }
 #header h1 {
   color: #FFC300;
@@ -183,7 +182,7 @@ h3 {
   padding: 0.5em;
   text-align: center;
 }
-nav {
+#header nav {
   width: 100%;
   height: 6em;
   display: flex;
@@ -191,20 +190,20 @@ nav {
   justify-content: center;
   background: #4a4a4a;
 }
-nav ul {
+#header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-nav ul li a {
+#header nav ul li a {
   color: #e0e0e0;
   font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
   font-size: 2em;
 }
-nav ul li a:hover {
+#header nav ul li a:hover {
   color: #a19e9e;
 }
-hr {
+#header hr {
   height: 1em;
   width: 100%;
   background: #FFC300;
@@ -245,7 +244,6 @@ hr {
   border-radius: 1rem;
   font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
   font-size: 1.6rem;
-
 }
 .about .about-main-dev-section {
   background: #4a4a4a;
@@ -711,4 +709,53 @@ footer .footer-contact-form .footer-form-button:active {
 footer p {
   text-align: center;
   padding: 2rem;
+}
+.about-built-banner {
+  background: #FFC300;
+  background: radial-gradient(circle, #ffc300 0%, #d09f01 100%);
+  color: black;
+  padding: 2rem 0;
+}
+.about-built-banner h2 {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+.about-built-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-built-banner div img {
+  filter: grayscale(100%);
+  padding: 0 2rem;
+}
+.about-built-banner div img:hover {
+  filter: grayscale(0%);
+}
+.about-built-banner div img:first-child {
+  height: 3.5rem;
+  width: 9rem;
+}
+.about-built-banner div img:nth-child(2) {
+  height: 9.5rem;
+  width: 9rem;
+}
+.about-built-banner div img:nth-child(3) {
+  height: 7.5rem;
+  width: 9rem;
+}
+.about-built-banner div img:nth-child(4) {
+  height: 6.5rem;
+  width: 9rem;
+}
+.about-built-banner div img:nth-child(5) {
+  height: 4.5rem;
+  width: 9rem;
+}
+.about-built-banner div img:last-child {
+  height: 9.5rem;
+  width: 9rem;
 }
