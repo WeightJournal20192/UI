@@ -450,6 +450,18 @@ hr {
   height: 10rem;
   width: 10rem;
 }
+.row {
+  color: #333;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-spacing: 4rem;
+  padding: 1em;
+}
+.row .cell {
+  width: 33%;
+  padding: 1em;
+}
 footer {
   background: #4a4a4a;
   color: white;
