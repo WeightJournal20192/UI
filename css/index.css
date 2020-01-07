@@ -232,25 +232,23 @@ h3 {
   height: 15rem;
   width: 9rem;
 }
-.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img:first-child {
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons a img:first-child {
   height: 3.5rem;
   width: 3.5rem;
   margin: 1rem 0;
 }
-.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img:first-child:hover {
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons a img:first-child:hover {
   background: white;
   border-radius: 3rem;
-  border: #FFC300 3px solid;
 }
-.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img + img {
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons a img + img {
   height: 3.5rem;
   width: 3.5rem;
   margin: 1rem 0;
 }
-.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons img + img:hover {
+.about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons a img + img:hover {
   background: white;
   border-radius: 3rem;
-  border: #FFC300 3px solid;
 }
 @media (min-width: 800px) {
   .about .about-main-dev-section .about-main-dev div:first-child .about-dev-icons {
@@ -430,25 +428,23 @@ h3 {
   width: 20rem;
   border-top-right-radius: 15rem;
 }
-.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img:first-child {
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons a img:first-child {
   height: 3.5rem;
   width: 3.5rem;
   margin: 0 1rem;
 }
-.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img:first-child:hover {
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons a img:first-child:hover {
   background: white;
   border-radius: 3rem;
-  border: #FFC300 3px solid;
 }
-.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img + img {
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons a img + img {
   height: 3.5rem;
   width: 3.5rem;
   margin: 0 1rem;
 }
-.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons img + img:hover {
+.about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons a img + img:hover {
   background: white;
   border-radius: 3rem;
-  border: #FFC300 3px solid;
 }
 @media (min-width: 800px) {
   .about .about-sec-dev-section .about-sec-dev .about-dev-content .about-dev-icons {
@@ -624,4 +620,41 @@ footer .footer-contact-form .footer-form-button:active {
 footer p {
   text-align: center;
   padding: 2rem;
+}
+#header {
+  padding: 2em;
+  background: #808080;
+  background: radial-gradient(circle, #808080 0%, #555555 100%);
+}
+#header h1 {
+  color: #FFC300;
+  font-size: 7em;
+  padding: 0.5em;
+  text-align: center;
+}
+#header nav {
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background: #4a4a4a;
+}
+#header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#header nav ul li a {
+  color: #e0e0e0;
+  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  font-size: 2em;
+}
+#header nav ul li a:hover {
+  color: #a19e9e;
+}
+#header hr {
+  height: 1em;
+  width: 100%;
+  background: #FFC300;
 }
