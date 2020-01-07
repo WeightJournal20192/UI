@@ -1,11 +1,28 @@
 footer {
 
+
     background: @primary-background;
     color: white;
     background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(45,44,44,1) 100%);
 
+    .container {
+        @media @desktop {
+            .flex(row);
+        }
+        
+
+        div {
+            @media @desktop {
+                width: 30%;
+            }
+        }
+    }
+    .footer-nav-h3 {
+        padding: @small 0 @small/2 @small;
+    }
     .footer-nav {
         .flex(column);
+        
         margin: @small;
         a {
             color: #ececec;
@@ -16,12 +33,22 @@ footer {
     
     .footer-contact-form {
         padding: @small;
+        @media @tablet {
+            .flex(column);
+            align-items: center;
+
+            @media @desktop {
+                width: 70%;
+                align-items: flex-start;
+            }
+        }
 
         div {
             margin-top: @small/2;
             .flex(row; space-between);
+            width: 100%;
             input {
-                width: 48%;
+                width: 45%;
                 .input-styling;
                 margin-bottom: @small/2;
                 padding: @small/2;
@@ -58,8 +85,4 @@ footer {
         text-align: center;
         padding: @small;
     }
-}
-
-footer > h3 {
-    padding: @small 0 0 @small;
 }
