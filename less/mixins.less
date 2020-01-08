@@ -6,28 +6,31 @@
 }
 
 .portfolio-icons(@x: 0;@y: 0) {
-    img:first-child {
-        height: 3.5rem;
-        width: 3.5rem;
-        margin: @y @x;
-    }
-    img:first-child:hover {
-        background:white;
-        border-radius: 3rem;
-        border: @primary-color 3px solid;
+    a {
+        img:first-child {
+            height: 3.5rem;
+            width: 3.5rem;
+            margin: @y @x;
+        }
+        img:first-child:hover {
+            background:white;
+            border-radius: 3rem;
+            // border: @primary-color 3px solid;
+        }
+    
+        img + img {
+            height: 3.5rem;
+            width: 3.5rem;
+            margin: @y @x;   
+        }
+    
+        img+img:hover {
+            background:white;
+            border-radius: 3rem;
+            // border: @primary-color 3px solid;
+        }
     }
 
-    img + img {
-        height: 3.5rem;
-        width: 3.5rem;
-        margin: @y @x;   
-    }
-
-    img+img:hover {
-        background:white;
-        border-radius: 3rem;
-        border: @primary-color 3px solid;
-    }
 }
 
 .input-styling {
