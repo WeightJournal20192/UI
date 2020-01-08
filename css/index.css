@@ -173,9 +173,10 @@ h3 {
   }
 }
 #header {
-  padding: 2em;
+  padding: 1em;
   background: #808080;
   width: auto;
+  height: 20em;
   border-bottom: #FFC300 0.5rem solid;
 }
 #header h1 {
@@ -184,9 +185,14 @@ h3 {
   padding: 0.5em;
   text-align: center;
 }
+#header #tag-line p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
 #header nav {
   width: auto;
-  height: 6em;
+  height: 4em;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -614,11 +620,11 @@ h3 {
   display: flex;
   flex-direction: row;
   border-spacing: 4rem;
-  background: #808080;
+  background: #d9d7d6;
 }
 .index-container .row .cell {
   width: 33%;
-  padding: 1em;
+  padding: 3em;
   text-align: center;
 }
 .index-container .row .cell img {
@@ -630,19 +636,10 @@ h3 {
   padding: 1em;
   border-radius: 10px;
 }
-.big-container {
-  width: auto;
-  height: 10em;
-  padding: 3em 4em 3em 4em;
-  text-align: center;
-  background-color: #fff;
-}
-.big-container h2 {
-  font-size: 3em;
-  color: #e0e0e0;
-}
 .bottom-index-section {
-  background: #808080;
+  background: #aba7a5;
+  border-bottom: #FFC300 0.5rem solid;
+  padding: 2em;
 }
 @media (min-width: 800px) {
   .bottom-index-section .bottom-index-container {
@@ -664,7 +661,7 @@ h3 {
 @media (min-width: 800px) {
   .bottom-index-section .bottom-index {
     flex-direction: columnn;
-    width: 30%;
+    width: 40%;
   }
 }
 .bottom-index-section .bottom-index .bottom-index-img {
