@@ -1,13 +1,109 @@
-.row {
-    color: @secondary-color;
-    width:100%; 
-    display: flex;
-    flex-direction: row;
-    border-spacing: @medium;
-    padding: 1em;
-   .cell {
-    width: 33%;
-    padding: 1em;
 
-   }
+    
+.index-container {
+    margin: 0 auto;
+    width: auto;
+    border-bottom: #FFC300 0.5rem solid;
+    border-top: #FFC300 0.5rem solid;
+
+//     #tag-line {
+//         p{
+//             background:#d9d7d6;
+//             color: black;
+//             font-family: @h-font;
+//             font-size: @small;
+//             text-align: center;
+//     }
+// }
+    .row {
+        color: @secondary-color;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-spacing: @medium;
+        //padding: .5em;
+        background: #d9d7d6;
+            .cell {
+                width: 33%;
+                padding: 3em;
+                text-align: center;
+                img {
+                    display:block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 25%;
+                    height: 6em;
+                    padding: 1em;
+                    border-radius: 10px;  
+                }
+            }
+        }
 }
+
+.bottom-index-section {
+  background:#aba7a5;
+  border-bottom: #FFC300 0.5rem solid; 
+  padding: 2em;
+  
+
+  .bottom-index-container {
+      @media @tablet {
+          align-items: center;
+      }
+      @media @desktop {
+          .flex(row;space-around);
+          flex-wrap: wrap;
+      }
+  }
+
+.bottom-index {
+    .flex;
+    align-items: center;
+    padding: @small/2;
+    // @media @tablet {
+    //     flex-direction: columnn;
+    //     width:50%;
+    //     padding-left: 3em;
+    // }
+    @media @desktop {
+        flex-direction: columnn;
+        width:35%;
+    }
+
+    .bottom-index-img {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    p {
+        padding: 1em;
+        box-shadow: 3px 3px 2px black;
+        
+    }
+
+    .bottom-index-content {
+        @media @tablet {
+            .flex(column);
+            align-items: center;
+        }
+        @media @desktop {
+            .flex(column);
+            align-items: center;
+        }
+        .bottom-index-content-text {
+            .flex(column);
+            align-items:center;
+            @media @desktop {
+                align-items: center;
+            }
+            color: black;
+
+
+        }
+
+    }
+
+}
+
+}
+

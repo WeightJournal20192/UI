@@ -1,0 +1,48 @@
+.index-built-banner {
+    background: @primary-color;
+    background: radial-gradient(circle, rgba(255,195,0,1) 0%, rgba(208,159,1,1) 100%);
+    color: black;
+    padding: @small 0;
+    h2 {
+        text-align: center;
+        padding: @small/2 0 @small 0;
+    }
+
+    div {
+        .flex(row; space-evenly);
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            filter: grayscale(100%);
+            padding: 0 @small;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+        img:first-child {
+            height: 3.5rem;
+            width: 9rem;
+        }
+        img:nth-child(2) {
+            height:9.5rem;
+            width: 9rem;
+        }
+        img:nth-child(3) {
+            height: 7.5rem;
+            width: 9rem;
+        }
+        img:nth-child(4) {
+            height: 6.5rem;
+            width: 9rem;
+        }
+        img:nth-child(5) {
+            height: 4.5rem;
+            width: 9rem;
+        }
+        img:last-child {
+            height: 9.5rem;
+            width: 9rem;
+        }
+    }
+}
