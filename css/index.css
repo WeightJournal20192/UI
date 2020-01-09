@@ -606,8 +606,8 @@ h3 {
 .index-container {
   margin: 0 auto;
   width: auto;
-  border-bottom: #FFC300 0.5rem solid;
-  border-top: #FFC300 0.5rem solid;
+  border-bottom: #ffc300 0.5rem solid;
+  border-top: #ffc300 0.5rem solid;
 }
 .index-container .row {
   color: #333;
@@ -633,12 +633,14 @@ h3 {
 }
 .bottom-index-section {
   background: #aba7a5;
-  border-bottom: #FFC300 0.5rem solid;
+  border-bottom: #ffc300 0.5rem solid;
   padding: 2em;
 }
 @media (min-width: 800px) {
   .bottom-index-section .bottom-index-container {
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 @media (min-width: 1000px) {
@@ -657,6 +659,13 @@ h3 {
   align-content: flex-start;
   align-items: center;
   padding: 1rem;
+}
+@media (min-width: 800px) {
+  .bottom-index-section .bottom-index {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
 }
 @media (min-width: 1000px) {
   .bottom-index-section .bottom-index {
@@ -678,7 +687,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
+    align-content: center;
   }
 }
 @media (min-width: 1000px) {
@@ -687,7 +696,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
+    align-content: center;
   }
 }
 .bottom-index-section .bottom-index .bottom-index-content .bottom-index-content-text {
@@ -700,7 +709,7 @@ h3 {
 }
 @media (min-width: 1000px) {
   .bottom-index-section .bottom-index .bottom-index-content .bottom-index-content-text {
-    align-items: center;
+    align-content: center;
   }
 }
 .index-built-banner {
